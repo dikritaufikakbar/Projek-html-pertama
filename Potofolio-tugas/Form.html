@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+
+    <div style="border: 2px solid gray; padding: 10px; width: 650px; max-width: 90%; margin: auto;">
+
+        <h2>Formulir Pendaftaran</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama" required>
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="nama@email.com" required>
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <label for="umur">Umur:</label><br>
+            <input type="number" id="umur" name="umur" min="1">
+            <br><br>
+
+            <label for="tanggal">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal" name="tanggal_lahir" required>
+            <br><br>
+
+            Jenis Kelamin:<br>
+            <input type="radio" id="laki" name="jenis_kelamin"
+                   value="Laki-laki" required>
+            <label for="laki">Laki-laki</label><br>
+
+            <input type="radio" id="perempuan" name="jenis_kelamin"
+                   value="Perempuan">
+            <label for="perempuan">Perempuan</label>
+            <br><br>
+
+            Hobi:<br>
+            <input type="checkbox" id="coding" name="hobi[]" value="Coding">
+            <label for="coding">Coding</label><br>
+
+            <input type="checkbox" id="gaming" name="hobi[]" value="Gaming">
+            <label for="gaming">Gaming</label><br>
+
+            <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+            <label for="olahraga">Olahraga</label>
+            <br><br>
+
+            <label for="jurusan">Jurusan Fakultas Teknik Universitas Mandiri:</label><br>
+
+            <select id="jurusan" name="jurusan" required>
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="Informatika">Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknik Industri">Teknik Industri</option>
+                <option value="Teknik Sipil">Teknik Sipil</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+            </select>
+            <br><br>
+
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat"
+                      rows="6" cols="50"
+                      placeholder="Masukkan alamat" required></textarea>
+            <br><br>
+
+            <label for="foto">Foto:</label><br>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <br><br>
+
+            <label for="website">Website:</label><br>
+            <input type="url" id="website" name="website"
+                   placeholder="https://example.com">
+            <br><br>
+
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
+
